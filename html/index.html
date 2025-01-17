@@ -8,15 +8,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index_style.css" /> 
+    <script src="../javascript/index_script.js" defer></script>
     <title>Portfolio of Holly Gummerson</title>
 </head>
 
 <!-- BODY -->
 <body>
+    <!-- HEADER -->
     <header>
         <h1> Holly Gummerson </h1>
         <p> Home | Projects | Blogs | Contact</p>
     </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <p>Welcome to my portfolio! Check out my projects and blogs below.</p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p id="contact"> Would you like to contact me further? </p>
+        <button id="noButton" type="button" onclick="updateContact('Try Again');hide('noButton')"> No </button>
+        <button id="yesButton" type="button" onclick="updateContact('Email: holly.gummersonn@gmail.com | Phone: 4034831489'); hide('yesButton')"> Yes </button>
+    </footer> 
 </body>
 
 </html>
