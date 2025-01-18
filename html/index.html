@@ -17,19 +17,33 @@
     <!-- HEADER -->
     <header>
         <h1> Holly Gummerson </h1>
-        <p> Home | Projects | Blogs | Contact</p>
+        <div class="links">
+            <a href="https://github.com/HGummerson"> Github </a>
+            <span>|</span>
+            <a href="http://www.linkedin.com/in/hollygummerson"> LinkedIn </a>
+        </div>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-        <p>Welcome to my portfolio! Check out my projects and blogs below.</p>
+        <div class="initial-statement">
+            <p>Hello Impact hiring manager! Most people "don't ever read this part of our job advertisement", but I did.</p>
+        </div>
+        <div class="aboutme">
+            <img src="../images/selfImage.JPG" alt="image of me">
+            <div class="text" >
+                <h2> About Me </h2>
+                <p> I am a fourth year computer science co-op student at the University of Victoria who has discovered a passion for web development through personal projects!
+                    I'm looking for the oppertunity to grow my skills and learn from proffesionals in the field.</p>
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER -->
     <footer>
         <p id="contact"> Would you like to contact me further? </p>
         <button id="noButton" type="button" onclick="updateContact('Try Again');hide('noButton')"> No </button>
-        <button id="yesButton" type="button" onclick="updateContact('Email: holly.gummersonn@gmail.com | Phone: 4034831489'); hide('yesButton')"> Yes </button>
+        <button id="yesButton" type="button" onclick="updateContact('Email: holly.gummersonn@gmail.com | Phone: 4034831489'); hide('yesButton'); hide('noButton')"> Yes </button>
     </footer> 
 </body>
 

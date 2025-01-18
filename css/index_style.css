@@ -1,5 +1,7 @@
 /* index styling */
 
+
+/*  STYLE FONT BETTER */
 html, body {
     height: 100%; 
     margin: 0; 
@@ -7,6 +9,7 @@ html, body {
     flex-direction: column; 
 }
 
+/* CHANGE THIS SO NAME GOES LONG */
 header {
     background-color: #000000;
     color: #fff;
@@ -14,12 +17,79 @@ header {
     padding: 10px;
 }
 
+.links a { 
+    color: #ffff;
+}
+
+.initial-statement {
+    font-size: 60px;
+    text-align: center;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #000000; 
+    color: #ffffff;
+    margin: 20px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .aboutme .text {
+    flex: 1;
+  }
+  
+  .aboutme img {
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    margin-right: 20px;
+  }
+  
+  .aboutme h2 {
+    margin: 0 0 10px 0; 
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  .aboutme p {
+    margin: 0; 
+    font-size: 16px;
+    line-height: 1.5; 
+  }
+
+/* TODO */
+.my-projects {
+    /* add two boxes with hover title and video of what it looks like  */
+    margin: 0;
+}
+
+.resume-coverletter {
+    /* wide boxes with resume / cv scroll option  */
+    margin: 0;
+}
+
+.completed-courses {
+    /* directly on background, courses completed  */
+    margin: 0;
+}
+
+.closing-message {
+    /* long black box with closing message to impact hiring manager */
+    margin: 0;
+}
+    
 main {
     flex: 1;
     padding: 20px; 
     background-color: #f9f9f9; 
 }
 
+/* KEEP FOOTER ATTACHED TO THE BOTTOM OF SCREEN */
 footer {
     background-color: #000000;
     color: #fff;

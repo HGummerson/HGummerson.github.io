@@ -11,3 +11,5 @@ function hide(button) {
     var div = document.getElementById(button);
     div.style.display = 'none';
 }
+
+// TODO, fade as you scroll, hover stuff for projects, scroll for resume, other
