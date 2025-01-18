@@ -15,7 +15,13 @@ header {
     color: #fff;
     text-align: center;
     padding: 10px;
+
 }
+
+    header h1 {
+        font-size: 40px;
+        text-align: center;
+    }
 
 .links a { 
     color: #ffff;
@@ -37,36 +43,64 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
 
-  .aboutme .text {
-    flex: 1;
-  }
+    .aboutme .text {
+        flex: 1;
+    }
   
-  .aboutme img {
-    border-radius: 50%; 
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover; 
-    margin-right: 20px;
-  }
+    .aboutme img {
+        border-radius: 50%; 
+        width: 150px; 
+        height: 150px; 
+        object-fit: cover; 
+        margin-right: 20px;
+    }
   
-  .aboutme h2 {
-    margin: 0 0 10px 0; 
-    font-size: 28px;
-    text-align: center;
-    padding-bottom: 5px;
-  }
+    .aboutme h2 {
+        margin: 0 0 10px 0; 
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
   
-  .aboutme p {
-    margin: 0; 
-    font-size: 16px;
-    line-height: 1.5; 
-  }
+    .aboutme p {
+        margin: 0; 
+        font-size: 16px;
+        line-height: 1.5; 
+    }
 
 /* TODO */
 .my-projects {
     /* add two boxes with hover title and video of what it looks like  */
     margin: 0;
+
 }
+
+    .my-projects h1 {
+        text-align: center;
+        /* text-shadow: #1c1919; fix */
+    }
+
+    .item-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .item-box {
+        width: 35%; 
+        box-sizing: border-box; 
+        border: 1px solid #ddd;
+        padding: 30px;
+        margin: 10px;
+        box-sizing: content-box;
+    }
+    
+    .item-box video {
+        max-width: 100%;
+        height: auto;
+        
+    }
 
 .resume-coverletter {
     /* wide boxes with resume / cv scroll option  */
