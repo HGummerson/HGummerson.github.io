@@ -6,6 +6,7 @@ html, body {
     margin: 0; 
     display: flex;
     flex-direction: column; 
+    font-family: Gill Sans, sans-serif;
 }
 
 /* CHANGE THIS SO NAME GOES LONG */
@@ -87,6 +88,7 @@ header {
         box-sizing: border-box;
         justify-content: space-between;
         align-items: center;
+        padding: 20px;
     }
     
     .item-box {
@@ -126,7 +128,21 @@ header {
     background-color: #000000; 
     color: #ffffff;
     margin: 20px auto; 
+    height: 300px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.document-box {
+    width: 48%; 
+    height: 300px;
+    margin: 10px;
+    box-sizing: content-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
 }
 
 .completed-courses {
