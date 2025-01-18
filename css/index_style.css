@@ -11,20 +11,23 @@ html, body {
 
 /* CHANGE THIS SO NAME GOES LONG */
 header {
-    background-color: #000000;
-    color: #fff;
+    border-bottom: 4px solid #000000; 
+    padding-bottom: 10px;
+    color: #000000;
     text-align: center;
     padding: 10px;
 
 }
 
     header h1 {
-        font-size: 40px;
+        font-size: 50px;
         text-align: center;
+        letter-spacing: 5px;
     }
 
 .links a { 
-    color: #ffff;
+    color: #000000;
+    text-decoration: none;
 }
 
 .initial-statement {
@@ -69,16 +72,22 @@ header {
     }
 
 /* TODO */
-.my-projects {
-    /* add two boxes with hover title and video of what it looks like  */
-    margin: 0;
+.my-projects .inline-git {
+    display: inline-block;
+}
 
+.my-projects a {
+    text-decoration: none;
+    font-style: italic;
+    color: inherit;
+    font-size: 28px;
 }
 
     .my-projects h1 {
+        display: inline-block;
         text-align: center;
         padding: 30px;
-        /* text-shadow: #1c1919; fix */
+        font-size: 40px;
     }
 
     .item-container {
@@ -145,15 +154,40 @@ header {
     
 }
 
-.completed-courses {
-    /* directly on background, courses completed  */
-    margin: 0;
+.completed-courses, .inline-link {
+    display: inline-block;
+}
+
+.completed-courses a {
+    text-decoration: none;
+    font-style: italic;
+    color: inherit;
+    font-size: 28px;
+}
+
+.completed-courses h1 {
+    display: inline-block;
+    margin-right: 10px;
+    padding-top: 20px;
+    font-size: 40px;
+    text-align: left;
+}
+
+.completed-courses p {
+    font-size: 10px;
+    text-align: left;
 }
 
 .closing-message {
-    /* long black box with closing message to impact hiring manager */
-    margin: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; 
+    color: #ffffff;
+    margin: 20px auto; 
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
     
 main {
     flex: 1;
