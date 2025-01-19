@@ -1,2 +1,3 @@
-# personal-portfolio
-Portfolio designed to showcase who I am !
+# Personal Webpage for impact.com - saasquach (Victoria)
+
+Visit https://hgummerson.github.io/ to see the webpage in action
