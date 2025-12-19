@@ -71,63 +71,95 @@ header {
         line-height: 1.5; 
     }
 
-/* TODO */
-.my-projects .inline-git {
-    display: inline-block;
-}
-
-.my-projects a {
-    text-decoration: none;
-    font-style: italic;
-    color: inherit;
-    font-size: 28px;
-}
-
-    .my-projects h1 {
-        display: inline-block;
-        text-align: center;
-        padding: 30px;
-        font-size: 40px;
-    }
-
-    .item-container {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        box-sizing: border-box;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-    
-    .item-box {
-        width: 48%; 
-        padding-top: 48%;
-        margin: 10px;
-        box-sizing: content-box;
-        position: relative;
+    .my-projects {
+        padding: 20px 0;
+      }
+      
+      .projects-header {
         display: flex;
         align-items: center;
+        gap: 14px;
         justify-content: center;
-        overflow: hidden;
-        
-    }
-    
-    .item-box video {
-        position: absolute;
-        object-fit: contain;
-        border-radius: 5px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: auto;
+        padding: 20px 20px 10px;
+      }
+      
+      .my-projects h1 {
+        margin: 0;
+        font-size: 30px;
+      }
+      
+      .my-projects .inline-git {
+        text-decoration: none;
+        font-style: italic;
+        color: inherit;
+        font-size: 22px;
+      }
+      
+      /* List container */
+      .work-list {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+      }
+      
+      /* Each row */
+      .work-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        align-items: center;
+      }
+      
+      /* Alternate sides */
+      .work-item:nth-child(even) .work-media { order: 2; }
+      .work-item:nth-child(even) .work-content { order: 1; }
+      
+      /* box */
+      .work-media {
+        width: 350px; 
+        height: 350px; 
+        overflow: hidden; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      
+      .work-media img {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;
+      }
+      
+      .work-media video {
+        display: block;
+        width: 100%;
         height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        background-color: #ffffff;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        
-    }
+      }
+      
+      /* Text */
+      .work-content h2 {
+        margin: 0 0 8px 0;
+        font-size: 22px;
+      }
+      
+      .work-content p {
+        margin: 0;
+        line-height: 1.6;
+        font-size: 16px;
+        opacity: 0.9;
+      }
+      
+      /* Mobile */
+      @media (max-width: 850px) {
+        .work-item { grid-template-columns: 1fr; }
+        .work-item:nth-child(even) .work-media,
+        .work-item:nth-child(even) .work-content { order: initial; }
+      }
+  
 
 .resume-coverletter {
     display: flex;
@@ -153,6 +185,27 @@ header {
     overflow: hidden;
     
 }
+.roles-box {
+    width: 100%; 
+    height: 500px;
+    margin: 10px;
+    background-color: #000000; 
+    box-sizing: content-box;
+    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .roles-box h2 {
+    color: #ffffff;
+    margin-bottom: 10px; 
+    font-size: 1.5rem; 
+  }
+  .roles-box p {
+    font-size: 1rem; 
+    color: #ffffff; 
+  }
 
 .completed-courses, .inline-link {
     display: inline-block;
@@ -184,7 +237,6 @@ header {
     background-color: #000000; 
     color: #ffffff;
     margin: 20px auto; 
-    height: 300px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 

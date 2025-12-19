@@ -1,7 +1,7 @@
 
 
 // FURTHER CONTACT BUTTON
-document.getElementById("contact").innerHTML = "Would you like to contact me further?";
+document.getElementById("contact").innerHTML = "Did you enjoy this webpage?";
 
 function updateContact(message) {
     document.getElementById("contact").innerHTML = message;

@@ -37,31 +37,94 @@
             <img src="/images/selfImage.JPG" alt="image of me">
             <div class="text" >
                 <h2> About Me </h2>
-                <p> I am a fourth year computer science co-op student at the University of Victoria who has discovered a passion for web development through personal projects!
-                    I'm looking for the opportunity to grow my skills and learn from professionals in the field.</p>
+                <p> I'm a computer science student who enjoys working with technology and figuring out how things work.
+                     I love learning everything from software to hardware, networks, security and everything in between.</p>
             </div>
         </div>
+
+        <!-- MORE BODY -->
+        </div>
+            <div></div>
+            <br> </br>
+            <p>I'm studing computer science and originally got into tech through software and web development. 
+            Along the way, I realized that what I enjoy most isn't just programming but understanding how things work underneath. 
+            Lately, I've been spending more time exploring systems, networking concepts, cybersecurity and hardware-adjacent projects. I like experimenting and fixing things, building an understanding of technology. 
+            I'm constantly learning and continue to work on new things to expand my knowlege.
+            </p>
+        </div>
+
 
         <!-- WHAT IM WORKING ON -->
-        <div id="projects" class="my-projects">
-            <h1> My Current Projects | </h1>
-            <a href="https://github.com/HGummerson"class="inline-git"> Github </a>
-            <div class = item-container>
-                <div id="clothesProject" class="item-box" >
-                    <video id="webvid" src="/images/webDemo.mp4" muted loop>
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div id="appProject" class="item-box">
-                    <video id="appvid" src="/images/appDemo.mp4" muted loop >
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
+    <div id="projects" class="my-projects">
+        <div class="projects-header">
+        <h1>Things I've Been Working On |</h1>
+        <a href="https://github.com/HGummerson" class="inline-git">GitHub</a>
+    </div>
+  
+    <div class="work-list">
+  
+      <!-- Network+ -->
+      <article class="work-item">
+        <div class="work-media">
+        <img src="/images/netplus.png" alt="ESP32 Door Buzzer Project" class="work-media work-media--image"/>
         </div>
+        <div class="work-content">
+          <h2>CompTIA Network+ Certification</h2>
+          <p>
+            Recently completed my CompTIA Network+ certification. I worked through the topics with lots of labs and practice exams 
+            building a stronger foundation in networking basics. I am excited to apply this knowlege and hope to pursue more networking projects. 
+          </p>
+        </div>
+      </article>
+  
+      <!-- ESP32 -->
+      <article class="work-item">
+        <div class="work-media">
+        <img src="/images/esp32-wiring.png" alt="ESP32 Door Buzzer Project" class="work-media work-media--image"/>
+        </div>
+        <div class="work-content">
+          <h2>ESP32 Door Buzzer Project</h2>
+          <p>
+            A small build that connects a text trigger to a physical servo press using an ESP32 and a simple cloud relay. Written using Arduino IDE and Cloudflare Workers. 
+            When I text a specific number, the ESP32 receives the signal from Cloudflare and activates a servo to press a door buzzer button.
+          </p>
+        </div>
+      </article>
+
+      <!-- Web demo -->
+      <article class="work-item">
+        <div class="work-media">
+          <video id="webvid" src="/images/webDemo.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="work-content">
+          <h2>MyClothes</h2>
+          <p>
+            A web project I have been working on to practice full stack development. This project allows users to upload clothing items and get a randomly 
+            generated outfit suggestion based on the weather in the locaiton. Got to try out new frameworks, databases and API integration with this project!
+            Hover over the video to see a quick demo.
+          </p>
+        </div>
+      </article>
+  
+      <!-- APP -->
+      <article class="work-item">
+        <div class="work-media">
+          <video id="appvid" src="/images/appdemocrop.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="work-content">
+          <h2>Decoding App</h2>
+          <p>
+            A mobile app experiment written in SwiftUI to help a friend who types using the symbol keyboard on her Iphone to encode her messages. Work in progress for sure. 
+            Hover over the video to see a quick demo. 
+          </p>
+        </div>
+      </article>
+  
+    </div>
+    </div>
 
         <!-- RESUME CV -->
-        <div id="documents" class="resume-coverletter">
+        <!-- <div id="documents" class="resume-coverletter">
             <div class="document-box" >
                 <embed
 	            src="/documents/GummersonHollyResume_.pdf"
@@ -70,7 +133,7 @@
 	            height="100%"
 	            title="Embedded PDF Viewer"
                 />
-            </div>
+            </div> -->
             <!-- <div class="document-box" >
                 <embed
 	            src="/documents/GummersonHolly_ImpactCV.pdf"
@@ -80,12 +143,19 @@
 	            title="Embedded PDF Viewer"
                 />
             </div> -->
+            <div id="recent-roles" class="roles-box">
+                <h2>Recent Roles</h2>
+                <p>
+                  coming soon...
+                  <br><br>
+                </p>
+              </div>
+
         </div>
 
         <!-- COMPLETED COURSEWORK -->
         <div class="completed-courses">
-            <h1 > Relevant Courses | </h1>
-            <a href="/documents/UVIC_Student_Transcript (1).pdf" class="inline-link">Transcript</a>
+            <h1 > Relevant Courses</h1>
             <ul>
                 <li> ALGORITHMS AND DATA STRUCTURES II</li>
                 <li> OPERATING SYSTEMS</li>
@@ -99,23 +169,18 @@
                 <li> LOGIC AND PROGRAMMING</li>
                 <li> PROGRAMMING LANGUAGES</li>
                 <li> SOFTWARE TESTING</li>
-                <li> INTRODUCTION TO ARTIFICIAL INTELLIGENCE | In Progress</li>
-                <li> CRYPTOGRAPHY | In Progress</li>
-                <li> OVERLAY AND PEER-TO-PEER NETWORKING | In Progress</li>
+                <li> INTRODUCTION TO ARTIFICIAL INTELLIGENCE</li>
+                <li> OVERLAY AND PEER-TO-PEER NETWORKING</li>
             </ul>
         </div>
 
          <!-- ENDING NOTE -->
         <div class="closing-message">
             <h1> End Note </h1>
-            <p> Thank you for taking the time to explore my work! I am passionate about programming and want to expand my knowledge further. 
-                 I am confident that my previous co-op experience and courses will allow me to make meanignful contributions to your team. 
+            <p> Thank you for taking the time to explore my work! 
+                Feel free to reach out or check out my GitHub to see what I'm building.
+                My LinkedIn and GitHub are linked at the top of the page.
             </p>
-            <p> If you have any questions or would like learn more, don't hesitate to reach out. I look forward to the 
-                possibility of working together, contact information can be found at the bottom of the page. Thank you again for your consideration.
-            </p>
-            <p> - Holly Gummerson </p>
-
         </div>
 
 
@@ -123,9 +188,9 @@
 
     <!-- FOOTER -->
     <footer>
-        <p id="contact"> Would you like to contact me further? </p>
+        <p id="contact"> Did you enjoy this webpage? </p>
         <button id="noButton" type="button" onclick="updateContact('Try Again');hide('noButton')"> No </button>
-        <button id="yesButton" type="button" onclick="updateContact('Email: holly.gummersonn@gmail.com | Phone: 4034831489'); hide('yesButton'); hide('noButton')"> Yes </button>
+        <button id="yesButton" type="button" onclick="updateContact('Thanks!'); hide('yesButton'); hide('noButton')"> Yes </button>
     </footer> 
 </body>
 
